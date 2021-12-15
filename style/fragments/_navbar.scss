@@ -1,0 +1,19 @@
+.section-advertising {
+  background-color: rgba(129, 129, 129, 0.3);
+  padding: 5px 0;
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+.buscar{
+  margin-left: 1vw;
+}
+.divLogo {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .logo {
+    width: 400px;
+    height: auto;
+  }
+}

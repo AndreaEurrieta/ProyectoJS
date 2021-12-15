@@ -1,0 +1,27 @@
+.tituloCarrito {
+  font-family: "Manrope", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin: 8vh 5vw;
+  font-weight: 1000;
+}
+
+.contenedor-carrito {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+  margin-left: 3vw;
+
+  div{
+
+    p{
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    padding-right: 40px;
+    color: black
+    }
+  }
+}

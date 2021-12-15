@@ -1,0 +1,70 @@
+.iconoWhatsapp {
+  color: rgb(39, 10, 20);
+  font-size: 50px;
+  position: fixed;
+  right: 2vw;
+  bottom: 12vh;
+}
+
+.iconoPlaceholder::placeholder{
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 500;
+}
+
+.iconoBag{
+  color: black;
+  font-size: 30px;
+  margin-right: 1.2vw;
+}
+.cart-widget-amount {
+  font-size: 10px;
+  position:absolute;
+  margin-right: 1vw;
+  top: 10vh;
+  right: -8px;
+  border-radius: 50%;
+  height: 17px;
+  width: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+}
+
+@media only screen and (max-width: 425px) {
+  .iconoWhatsapp {
+    color: rgb(39, 10, 20);
+    font-size: 35px;
+    position: fixed;
+    right: 1vw;
+    bottom: 10vh;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .iconoWhatsapp {
+    color: rgb(39, 10, 20);
+    font-size: 40px;
+    position: fixed;
+    right: 1.5vw;
+    bottom: 10vh;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .iconoWhatsapp {
+    color: rgb(39, 10, 20);
+    font-size: 45px;
+    position: fixed;
+    right: 2vw;
+    bottom: 12vh;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .iconoWhatsapp {
+    color: rgb(39, 10, 20);
+    font-size: 48px;
+    position: fixed;
+    right: 2vw;
+    bottom: 12vh;
+  }
+}

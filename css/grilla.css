@@ -1,0 +1,110 @@
+.grilla {
+  width: auto;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 425px) {
+  .contenedorPrincipalGaleria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contenedorPrincipalGaleria .imagenesGaleria {
+    width: 90vw;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .contenedorPrincipalGaleria {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    height: auto;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+    row-gap: 20px;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contenedorPrincipalGaleria .imagenesGaleria {
+    width: 40vw;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .contenedorPrincipalGaleria {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    height: auto;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+    row-gap: 20px;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contenedorPrincipalGaleria .imagenesGaleria {
+    width: 35vw;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .contenedorPrincipalGaleria {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    height: auto;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -webkit-column-gap: 25px;
+            column-gap: 25px;
+    row-gap: 35px;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+  }
+  .contenedorPrincipalGaleria .imagenesGaleria {
+    height: 400px;
+    width: auto;
+  }
+  .contenedorPrincipalGaleria .animacionFotosDeGaleria:hover {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+}
+/*# sourceMappingURL=grilla.css.map */
