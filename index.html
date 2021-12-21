@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/loguito.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +35,8 @@
         </section>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <form class="d-flex">
-                <input class="buscar form-control small search-input" autocomplete="off" type="search" placeholder="Buscar" aria-label="Buscador">
+                <input class="buscar form-control small search-input" autocomplete="off" type="search"
+                    placeholder="Buscar" aria-label="Buscador">
                 </button>
             </form>
             <div class="divLogo container-center">
@@ -51,6 +53,25 @@
         </nav>
     </header>
     <main>
+        <div id="popup-wrapper">
+            <div id="newsletter-popup-wrapper" class="popup-container">
+                <div id="fancyhome" class="newsletter">
+                    <button id="close" class="close-up" type="button">✕</button>
+                    <h3>be on the list</h3>
+                    <p>suscribite al newsletter y enterate de novedades y lanzamientos exclusivos</p>
+                    <div class="formulario">
+                        <form>
+                            <div>
+                                <input type="Nombre" class="imput-style" placeholder="NOMBRE">
+                                <input type="Apellido" class="imput-style" placeholder="APELLIDO">
+                                <input type="email" class="imput-style" placeholder="nombre@example.com">
+                            </div>
+                            <button type="submit" class="btn-suscribirse">Suscribirme</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="contenedorCarrusel">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -93,6 +114,9 @@
             <div class="contenedor-carrito">
 
             </div>
+        </div>
+        <div class="ventana-modal">
+
         </div>
     </main>
     <footer>
@@ -143,6 +167,7 @@
         </div>
     </footer>
     <script src="libs/jquery-3.6.0.min.js"></script>
+    <script src="popup.js"></script>
     <script src="./main2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
