@@ -1,84 +1,14 @@
 const contenedorArticulos = document.querySelector('.contenedor-articulos');
 const contenedorCarrito = document.querySelector('.contenedor-carrito');
-const articulos = [
-    {
-        id: 1,
-        name: "Buzo Xiomi",
-        price: 7500,
-        img: "./imagenes/img1.png"
-    },
-    {
-        id: 2,
-        name: "Camisa Padn",
-        price: 14500,
-        img: "./imagenes/img2.png"
-    },
-    {
-        id: 3,
-        name: "Buzo Rabbit",
-        price: 6950,
-        img: "./imagenes/img3.png"
-    },
-    {
-        id: 4,
-        name: "Conjunto Essi",
-        price: 18500,
-        img: "./imagenes/img6.png"
-    },
-    {
-        id: 5,
-        name: "Buzo Ter",
-        price: 11200,
-        img: "./imagenes/img7.png"
-    },
-    {
-        id: 6,
-        name: "Buzo Dan",
-        price: 9850,
-        img: "./imagenes/img8.png"
-    },
-    {
-        id: 7,
-        name: "Camisa Sheby",
-        price: 14900,
-        img: "./imagenes/img9.png"
-    },
-    {
-        id: 8,
-        name: "Camisa Alma",
-        price: 14500,
-        img: "./imagenes/img10.png"
-    },
-    {
-        id: 9,
-        name: "Blazer Thami",
-        price: 14950,
-        img: "./imagenes/img11.png"
-    },
-    {
-        id: 10,
-        name: "Pantalón Cris",
-        price: 11990,
-        img: "./imagenes/img4.png"
-    },
-    {
-        id: 11,
-        name: "Botas Vivian",
-        price: 19300,
-        img: "./imagenes/imgbotas1,1.png"
-    },
-    {
-        id: 12,
-        name: "Botas Arge",
-        price: 21890,
-        img: "./imagenes/img12,12.png"
-    },
-]
+const articulos = []
 let carrito = []
 $(() => {
+    $.getJSON('./articulos.json',function(data) {
+        data.forEach(elemento => articulos.push(elemento));
+        mostrarArticulos(articulos);
+    })
     mostrarCarrito(carrito);
-    mostrarArticulos()
-})
+});
 const mostrarArticulos = () => {
     for (const articulo of articulos) {
         $('.contenedor-articulos').append(`
