@@ -7,10 +7,18 @@
 }
 
 .iconoBag{
-  color: black;
+  border: none;
+  background-color: transparent;
   font-size: 30px;
   margin-right: 1.2vw;
+  text-decoration: none;
+  color: black;
 }
+
+.iconoBag:hover{
+  color: rgb(54, 54, 54);
+}
+
 .cart-widget-amount {
   font-size: 10px;
   position:absolute;

@@ -53,7 +53,7 @@ function mostrarCarrito(carrito) {
     contenedorCarrito.replaceChildren();
     document.getElementById("cantidadDeItems").textContent = carrito.length;
 
-    let total = 0;
+    let total =  0;
 
     carrito.forEach((producto) => {
         total += producto.price;

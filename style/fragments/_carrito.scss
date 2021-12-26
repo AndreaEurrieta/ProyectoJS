@@ -1,3 +1,19 @@
+.ventana-modal{
+  display: none;
+  .alerta{
+  clear: both;
+  padding: 1.5vh 0vw;
+  text-align: center;
+  }
+
+  .alerta-info {
+    background-color: white;
+    border-radius: 0rem;
+    color: #000000;
+    border: 1px solid #000000;
+    width: 25vw;
+  }
+
 .tituloCarrito {
   font-family: "Manrope", sans-serif;
   text-transform: uppercase;
@@ -24,4 +40,5 @@
     color: black
     }
   }
+}
 }
