@@ -57,22 +57,51 @@ function mostrarCarrito(carrito) {
 
     carrito.forEach((producto) => {
         total += producto.price;
+        
         const div = document.createElement("div");
-        const nombreArticulo = document.createElement("p");
-        nombreArticulo.textContent = `${producto.name} ${producto.price}`;
-        div.appendChild(nombreArticulo);
-        contenedorCarrito.appendChild(div);
+        const div2 = document.createElement("div");
+        div2.classList.add("div2")
 
+        const imagen = document.createElement("img");
+        imagen.src = producto.img;
+        imagen.classList.add("img-carrito");
+
+        const nombreArticulo = document.createElement("h2");
+        nombreArticulo.textContent = producto.name;
+        nombreArticulo.classList.add("nombreArticulo-carrito");
+
+        const precioArticulo = document.createElement("p");
+        precioArticulo.textContent = producto.price;
+        precioArticulo.classList.add("precio-carrito");
+
+        const input = document.createElement("input");
+        input.type = "number";
+        input.classList.add = ("cantidad-producto");
+
+        const button = document.createElement('button');
+        button.type = "button";
+        button.innerHTML = "Delete";
+        button.classList.add = ("btn-eliminar-producto");
+    
+        div.appendChild(imagen);
+        div2.appendChild(nombreArticulo);
+        div2.appendChild(precioArticulo);
+        div2.appendChild(input);
+        div2.appendChild(button);
+        contenedorCarrito.appendChild(div);
+        contenedorCarrito.appendChild(div2);
+
+        
     });
 
     const totalHTML = document.createElement("p");
-    totalHTML.textContent = `Total: ${total}`;
+    totalHTML.textContent = `Total: $ ${total.toFixed(2)}`;
     contenedorCarrito.appendChild(totalHTML);
-}
+
+ }
+
 
 function cargarLocalStorage() {
     let _carrito = localStorage.getItem('carrito');
     if (_carrito) carrito = JSON.parse(_carrito);
 }
-
-

@@ -61,13 +61,13 @@
     },
     {
         "id": 11,
-        "name": "Botas Vivian",
+        "name": "Vestido Vivian",
         "price": 19300,
         "img": "./imagenes/imgbotas1,1.png"
     },
     {
         "id": 12,
-        "name": "Botas Arge",
+        "name": "Campera Arge",
         "price": 21890,
         "img": "./imagenes/img12,12.png"
     }

@@ -892,12 +892,28 @@ form .buscar {
 
 .ventana-modal {
   display: none;
+  width: 30vw;
+  height: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: white;
 }
 
 .ventana-modal .alerta {
   clear: both;
   padding: 1.5vh 0vw;
   text-align: center;
+  margin: 0vh 2.5vw;
+}
+
+.ventana-modal .close-up {
+  font-size: 18px;
+  margin-right: 0.5vw;
+  margin-top: 0vh;
+  border: none;
+  background-color: transparent;
+  float: right;
 }
 
 .ventana-modal .alerta-info {
@@ -914,11 +930,26 @@ form .buscar {
   color: black;
   font-size: 20px;
   letter-spacing: 3px;
-  margin: 8vh 5vw;
+  margin: 2vh 5vw;
   font-weight: 1000;
 }
 
 .ventana-modal .contenedor-carrito {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  height: 100%;
+  overflow-x: hidden;
+  margin-left: 3vw;
+}
+
+.ventana-modal .contenedor-carrito div .img-carrito {
+  height: 15vh;
+  width: auto;
+}
+
+.ventana-modal .contenedor-carrito .div2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -926,16 +957,48 @@ form .buscar {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
-  overflow-x: hidden;
-  margin-left: 3vw;
 }
 
-.ventana-modal .contenedor-carrito div p {
-  font-family: "Manrope", sans-serif;
-  font-size: 15px;
-  padding-right: 40px;
-  color: black;
+.ventana-modal .contenedor-carrito .div2 .nombreArticulo-carrito {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.ventana-modal .contenedor-carrito .div2 .precio-carrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+.ventana-modal .contenedor-carrito .div2 .btn-eliminar-producto {
+  background-image: url(/imagenes/trash.png);
+  width: auto;
+  height: 20vh;
+}
+
+.ventana-modal .comprarButton {
+  display: block;
+  margin: 0 auto;
+  padding: 1vh 0vw;
+  font-size: 14px;
+  border-radius: 0rem;
+  border-bottom: 3px solid #000000;
+}
+
+.ventana-modal .comprarButton:hover {
+  background-size: 200% 200%;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(100%, #000000), to(transparent));
+  background-image: linear-gradient(to top, #000000 100%, transparent 100%);
+  color: white;
+  border-bottom: 3px solid #000000;
+  -webkit-transition: all 0.09s ease-in;
+  transition: all 0.09s ease-in;
 }
 
 #popup-wrapper {
