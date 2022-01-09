@@ -43,6 +43,7 @@ const mostrarArticulos = () => {
     }
 }
 
+
 function agregarProducto(id) {
     const producto = articulos.find(articulo => articulo.id === id);
     carrito.push(producto);
@@ -56,8 +57,8 @@ function mostrarCarrito(carrito) {
     let total =  0;
 
     carrito.forEach((producto) => {
-        total += producto.price;
-        
+        total += producto.price * producto.cantidad;
+
         const div = document.createElement("div");
         const div2 = document.createElement("div");
         div2.classList.add("div2")
@@ -74,34 +75,57 @@ function mostrarCarrito(carrito) {
         precioArticulo.textContent = producto.price;
         precioArticulo.classList.add("precio-carrito");
 
-        const input = document.createElement("input");
-        input.type = "number";
-        input.classList.add = ("cantidad-producto");
+        const cantidad = document.createElement("input");
+        cantidad.type = "number";
+        cantidad.min = "1";
+        cantidad.classList.add = ("cantidad-producto");
 
         const button = document.createElement('button');
         button.type = "button";
-        button.innerHTML = "Delete";
+        button.innerHTML = "✕";
         button.classList.add = ("btn-eliminar-producto");
     
         div.appendChild(imagen);
         div2.appendChild(nombreArticulo);
         div2.appendChild(precioArticulo);
-        div2.appendChild(input);
+        div2.appendChild(cantidad);
         div2.appendChild(button);
         contenedorCarrito.appendChild(div);
         contenedorCarrito.appendChild(div2);
-
-        
     });
+
+    contenedorCarrito.querySelector('.cantidad-producto')
+    contenedorCarrito.addEventListener('change', quantityChanged);
+
+    contenedorCarrito.querySelector('.btn-eliminar-producto')
+    contenedorCarrito.addEventListener('click', removeShoppingCartItem);
 
     const totalHTML = document.createElement("p");
     totalHTML.textContent = `Total: $ ${total.toFixed(2)}`;
     contenedorCarrito.appendChild(totalHTML);
 
- }
+    const comprarButton = document.querySelector('.comprarButton');
+    comprarButton.addEventListener('click', comprarButtonClicked);
+   
+}
+function comprarButtonClicked() {
+    contenedorCarrito.innerHTML = '';
+    mostrarCarrito();
+}
+function quantityChanged(event) {
+    const input = event.target;
+    input.value <= 0 ? (input.value = 1) : null;
+    mostrarCarrito();
+  }
 
+function removeShoppingCartItem(event) {
+    const buttonClicked = event.target;
+    buttonClicked.closest('.contenedor-carrito').remove();
+    mostrarCarrito();
+  }
 
 function cargarLocalStorage() {
     let _carrito = localStorage.getItem('carrito');
     if (_carrito) carrito = JSON.parse(_carrito);
 }
+

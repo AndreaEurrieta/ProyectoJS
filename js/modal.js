@@ -11,4 +11,3 @@ closeCar.addEventListener('click', e =>{
         myModal.style.display = 'none';
     }
 });
-

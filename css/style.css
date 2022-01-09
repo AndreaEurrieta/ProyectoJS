@@ -977,7 +977,6 @@ form .buscar {
 }
 
 .ventana-modal .contenedor-carrito .div2 .btn-eliminar-producto {
-  background-image: url(/imagenes/trash.png);
   width: auto;
   height: 20vh;
 }

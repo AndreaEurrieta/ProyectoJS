@@ -52,61 +52,8 @@
             </div>
         </nav>
     </header>
-    <main>
-        <!-- START MODAL CARRITO -->
-        <div id="ventana-modal-car" class="ventana-modal modal-dialog-scrollable">
-            <button id="closeCar" class="close-up" type="button">✕</button>
-            <h2 class="tituloCarrito">Carrito de Compras</h2>
-            <div id="alert" class="alerta alerta-info">El carrito de compras está vacío.</div>
-            <div class="contenedor-carrito">
-               
-            </div>
-            <div class="modal-footer">
-                <button id="comprarBtn" class="comprarButton" type="button" data-toggle="modal" data-target="#comprarModal">
-                    Comprar
-            </button>
-            </div>
-            
-        </div>
-         <!-- START MODAL COMPRA -->
-        <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Pronto recibirá su pedido</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button id="cerrarCompra" type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <div id="popup-wrapper">
-            <div id="newsletter-popup-wrapper" class="popup-container">
-                <div id="fancyhome" class="newsletter">
-                    <button id="close" class="close-up" type="button">✕</button>
-                    <h3>be on the list</h3>
-                    <p>suscribite al newsletter y enterate de novedades y lanzamientos exclusivos</p>
-                    <div class="formulario">
-                        <form>
-                            <div>
-                                <input type="Nombre" class="imput-style" placeholder="NOMBRE">
-                                <input type="Apellido" class="imput-style" placeholder="APELLIDO">
-                                <input type="email" class="imput-style" placeholder="nombre@example.com">
-                            </div>
-                            <button type="submit" class="btn-suscribirse">Suscribirme</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- START CAROUSEL -->
+    <section>
         <div class="contenedorCarrusel">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -139,6 +86,64 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+        </div>
+    </section>
+    <!-- END CAROUSEL -->
+    <main>
+        <!-- START POPUP -->
+        <div id="popup-wrapper">
+            <div id="newsletter-popup-wrapper" class="popup-container">
+                <div id="fancyhome" class="newsletter">
+                    <button id="close" class="close-up" type="button">✕</button>
+                    <h3>be on the list</h3>
+                    <p>suscribite al newsletter y enterate de novedades y lanzamientos exclusivos</p>
+                    <div class="formulario">
+                        <form>
+                            <div>
+                                <input type="Nombre" class="imput-style" placeholder="NOMBRE">
+                                <input type="Apellido" class="imput-style" placeholder="APELLIDO">
+                                <input type="email" class="imput-style" placeholder="nombre@example.com">
+                            </div>
+                            <button type="submit" class="btn-suscribirse">Suscribirme</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END POPUP -->
+        <!-- START MODAL CARRITO -->
+        <div id="ventana-modal-car" class="ventana-modal modal-dialog-scrollable">
+            <button id="closeCar" class="close-up" type="button">✕</button>
+            <h2 class="tituloCarrito">Carrito de Compras</h2>
+            <div id="alert" class="alerta alerta-info">El carrito de compras está vacío.</div>
+            <div class="contenedor-carrito">
+               
+            </div>
+            <div class="modal-footer">
+                <button id="comprarBtn" class="comprarButton" type="button" data-toggle="modal" data-target="#comprarModal">
+                    Comprar
+            </button>
+             </div>
+        </div>
+         <!-- START MODAL COMPRA -->
+        <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="cerrarCompra" type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
         </div>
         <div class="contenedor">
             <h1>Fire AW22</h1>
