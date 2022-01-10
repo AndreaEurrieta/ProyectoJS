@@ -19,7 +19,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-
   }
 
   .tarjeta {
@@ -95,7 +94,11 @@
       }
       .btn-primary:hover {
         background-size: 200% 200%;
-        background-image: linear-gradient(to top, #000000 100%, transparent 100%);
+        background-image: linear-gradient(
+          to top,
+          #000000 100%,
+          transparent 100%
+        );
         color: white;
         border-bottom: 3px solid #000000;
         transition: all 0.09s ease-in;
@@ -119,7 +122,7 @@
       color: black;
       text-align: center;
     }
-    .price{
+    .price {
       font-family: "Rubik", sans-serif;
       font-size: 15px;
       color: black;
@@ -149,23 +152,22 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-  
     }
-  
+
     .tarjeta {
       text-align: center;
       align-items: center;
       color: black;
       overflow: hidden;
       border: none;
-  
+
       .img {
         height: 60vh;
         width: auto;
         object-fit: cover;
         object-position: center;
       }
-  
+
       .bag {
         display: flex;
         margin: 1vw auto;
@@ -173,7 +175,7 @@
         background-color: white;
         font-size: 15px;
       }
-  
+
       .divC1 {
         display: none;
         align-items: center;
@@ -197,7 +199,7 @@
           border-radius: 0rem;
           border: 1px solid #000000;
         }
-  
+
         .btn {
           align-items: center;
           color: #000000;
@@ -229,7 +231,11 @@
         }
         .btn-primary:hover {
           background-size: 200% 200%;
-          background-image: linear-gradient(to top, #000000 100%, transparent 100%);
+          background-image: linear-gradient(
+            to top,
+            #000000 100%,
+            transparent 100%
+          );
           color: white;
           border-bottom: 3px solid #000000;
           transition: all 0.09s ease-in;
@@ -253,7 +259,7 @@
         color: black;
         text-align: center;
       }
-      .price{
+      .price {
         font-family: "Rubik", sans-serif;
         font-size: 12px;
         color: black;
@@ -261,7 +267,6 @@
       }
     }
   }
-  
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   .contenedor {
@@ -285,22 +290,21 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  
     }
-  
+
     .tarjeta {
       text-align: center;
       color: black;
       overflow: hidden;
       border: none;
-  
+
       .img {
         height: 50vh;
         width: auto;
         object-fit: cover;
         object-position: center;
       }
-  
+
       .bag {
         display: flex;
         margin: 1vw auto;
@@ -308,7 +312,7 @@
         background-color: white;
         font-size: 15px;
       }
-  
+
       .divC1 {
         display: none;
         align-items: center;
@@ -331,7 +335,7 @@
           border-radius: 0rem;
           border: 1px solid #000000;
         }
-  
+
         .btn {
           align-items: center;
           color: #000000;
@@ -363,7 +367,11 @@
         }
         .btn-primary:hover {
           background-size: 200% 200%;
-          background-image: linear-gradient(to top, #000000 100%, transparent 100%);
+          background-image: linear-gradient(
+            to top,
+            #000000 100%,
+            transparent 100%
+          );
           color: white;
           border-bottom: 3px solid #000000;
           transition: all 0.09s ease-in;
@@ -387,7 +395,7 @@
         color: black;
         text-align: center;
       }
-      .price{
+      .price {
         font-family: "Rubik", sans-serif;
         font-size: 15px;
         color: black;
@@ -418,22 +426,21 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-  
     }
-  
+
     .tarjeta {
       text-align: center;
       color: black;
       overflow: hidden;
       border: 1px solid lightgray;
-  
+
       .img {
         height: 75vh;
         width: auto;
         object-fit: cover;
         object-position: center;
       }
-  
+
       .bag {
         display: flex;
         margin: 1vw auto;
@@ -441,7 +448,7 @@
         background-color: white;
         font-size: 20px;
       }
-  
+
       .divC1 {
         display: none;
         align-items: center;
@@ -464,7 +471,7 @@
           border-radius: 0rem;
           border: 1px solid #000000;
         }
-  
+
         .btn {
           align-items: center;
           color: #000000;
@@ -496,7 +503,11 @@
         }
         .btn-primary:hover {
           background-size: 200% 200%;
-          background-image: linear-gradient(to top, #000000 100%, transparent 100%);
+          background-image: linear-gradient(
+            to top,
+            #000000 100%,
+            transparent 100%
+          );
           color: white;
           border-bottom: 3px solid #000000;
           transition: all 0.09s ease-in;
@@ -520,7 +531,7 @@
         color: black;
         text-align: center;
       }
-      .price{
+      .price {
         font-family: "Rubik", sans-serif;
         font-size: 15px;
         color: black;
@@ -528,8 +539,4 @@
       }
     }
   }
-  
-}
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-
 }

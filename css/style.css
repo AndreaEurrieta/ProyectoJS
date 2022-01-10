@@ -1294,16 +1294,6 @@ footer .col3 p {
   }
 }
 
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .iconoWhatsapp {
-    color: #270a14;
-    font-size: 48px;
-    position: fixed;
-    right: 2vw;
-    bottom: 12vh;
-  }
-}
-
 .section-advertising {
   background-color: black;
   padding: 5px 0;

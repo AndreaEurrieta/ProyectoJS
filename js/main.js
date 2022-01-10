@@ -86,8 +86,8 @@ function mostrarCarrito(carrito) {
         button.type = "button";
         button.innerHTML = '<i class="far fa-trash-alt"></i>';
         button.classList.add("btn-eliminar-producto");
-        button.addEventListener('click', ()=>{
-            carrito = carrito.filter(item => item !=producto)
+        button.addEventListener('click', () => {
+            carrito = carrito.filter(item => item != producto)
             actualizarCarrito(carrito);
             mostrarCarrito(carrito);
         });
@@ -103,7 +103,7 @@ function mostrarCarrito(carrito) {
 
     });
 
-    function actualizarCarrito(carritoNew){
+    function actualizarCarrito(carritoNew) {
         carrito = carritoNew;
     }
 
@@ -113,7 +113,7 @@ function mostrarCarrito(carrito) {
     const totalHTML = document.createElement("p");
     totalHTML.textContent = `Total: $ ${total.toFixed(2)}`;
     contenedorCarrito.appendChild(totalHTML);
-   
+
 }
 
 const comprarButton = document.querySelector('.comprarButton');

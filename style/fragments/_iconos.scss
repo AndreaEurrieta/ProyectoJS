@@ -6,7 +6,7 @@
   bottom: 12vh;
 }
 
-.iconoBag{
+.iconoBag {
   margin-left: 5vw;
   border: none;
   background-color: transparent;
@@ -16,13 +16,13 @@
   color: black;
 }
 
-.iconoBag:hover{
+.iconoBag:hover {
   color: rgb(54, 54, 54);
 }
 
 .cart-widget-amount {
   font-size: 10px;
-  position:absolute;
+  position: absolute;
   margin-right: 1vw;
   top: 12vh;
   right: -8px;
@@ -44,7 +44,7 @@
     right: 1vw;
     bottom: 10vh;
   }
-  .iconoBag{
+  .iconoBag {
     border: none;
     background-color: transparent;
     font-size: 20px;
@@ -52,14 +52,14 @@
     text-decoration: none;
     color: black;
   }
-  
-  .iconoBag:hover{
+
+  .iconoBag:hover {
     color: rgb(54, 54, 54);
   }
-  
+
   .cart-widget-amount {
     font-size: 8px;
-    position:absolute;
+    position: absolute;
     margin-right: 1vw;
     top: 12vh;
     right: 0;
@@ -72,7 +72,6 @@
     color: white;
     background-color: black;
   }
-  
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   .iconoWhatsapp {
@@ -82,7 +81,7 @@
     right: 1.5vw;
     bottom: 10vh;
   }
-  .iconoBag{
+  .iconoBag {
     border: none;
     background-color: transparent;
     font-size: 25px;
@@ -90,15 +89,15 @@
     text-decoration: none;
     color: black;
   }
-  
-  .iconoBag:hover{
+
+  .iconoBag:hover {
     color: rgb(54, 54, 54);
   }
-  
+
   .cart-widget-amount {
     text-align: center;
     font-size: 8px;
-    position:absolute;
+    position: absolute;
     margin-right: 0.5vw;
     top: 12vh;
     right: 0px;
@@ -111,7 +110,6 @@
     color: white;
     background-color: black;
   }
-  
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .iconoWhatsapp {
@@ -121,7 +119,7 @@
     right: 2vw;
     bottom: 12vh;
   }
-  .iconoBag{
+  .iconoBag {
     border: none;
     background-color: transparent;
     font-size: 28px;
@@ -129,15 +127,15 @@
     text-decoration: none;
     color: black;
   }
-  
-  .iconoBag:hover{
+
+  .iconoBag:hover {
     color: rgb(54, 54, 54);
   }
-  
+
   .cart-widget-amount {
     text-align: center;
     font-size: 8px;
-    position:absolute;
+    position: absolute;
     margin-right: 0.5vw;
     top: 12vh;
     right: 0px;
@@ -149,14 +147,5 @@
     justify-content: center;
     color: white;
     background-color: black;
-  }
-}
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .iconoWhatsapp {
-    color: rgb(39, 10, 20);
-    font-size: 48px;
-    position: fixed;
-    right: 2vw;
-    bottom: 12vh;
   }
 }
