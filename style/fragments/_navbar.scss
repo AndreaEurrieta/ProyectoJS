@@ -42,6 +42,10 @@
     font-family: "Rubik", sans-serif;
     font-size: 12px;
   }
+  .navbar{
+    display: flex;
+    height:28vh;
+   
   form{
     .buscar{
     display: none;
@@ -55,15 +59,16 @@
   }
   
   .divLogo {
-    width: 50vw;
+    width: 70vw;
     display: flex;
     justify-content: justify;
     .logo {
-      width: 50vw;
+      width: 70vw;
       height: auto;
       margin-right: 0vw;
     }
   } 
+}
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
@@ -111,7 +116,9 @@
     font-size: 15px;
   }
   
- 
+  .navbar{
+    display: flex;
+    flex-direction:row;
   form{
     .buscar{
     margin-left: 1vw;
@@ -134,5 +141,5 @@
       margin-right: 0vw;
     }
   }
-
+  }
 }
