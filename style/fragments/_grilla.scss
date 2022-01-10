@@ -264,42 +264,270 @@
   
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
-  .contenedorArticulos {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 20px;
-    justify-items: center;
-    align-items: center;
+  .contenedor {
+    background-color: white;
+    h1 {
+      font-family: "Manrope", sans-serif;
+      color: black;
+      font-size: 30px;
+      letter-spacing: 8px;
+      text-align: center;
+      justify-items: center;
+      padding: 5vh 0vh;
+      font-weight: 1000;
+    }
+    .contenedor-articulos {
+      margin-left: 2vw;
+      margin-right: 2vw;
+      margin-top: 5vh;
+      width: auto;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  
+    }
+  
+    .tarjeta {
+      text-align: center;
+      color: black;
+      overflow: hidden;
+      border: none;
+  
+      .img {
+        height: 50vh;
+        width: auto;
+        object-fit: cover;
+        object-position: center;
+      }
+  
+      .bag {
+        display: flex;
+        margin: 1vw auto;
+        border: none;
+        background-color: white;
+        font-size: 15px;
+      }
+  
+      .divC1 {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        .talle {
+          font-family: "Rubik", sans-serif;
+          font-size: 12px;
+          color: black;
+          text-align: justify;
+          margin-left: 20vw;
+        }
+        .form-select {
+          font-family: "Rubik", sans-serif;
+          font-size: 13px;
+          color: black;
+          width: 50%;
+          margin: 0 auto;
+          border-radius: 0rem;
+          border: 1px solid #000000;
+        }
+  
+        .btn {
+          align-items: center;
+          color: #000000;
+          position: relative;
+          text-decoration: none;
+          font-weight: 400;
+          text-align: center;
+          border: 0;
+          cursor: pointer;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          text-transform: uppercase;
+          background: none;
+          white-space: normal;
+          -webkit-transition: all 0.4s ease;
+          -ms-transition: all 0.4s ease;
+          -moz-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+        }
+        .btn-primary {
+          display: block;
+          margin: 0 auto;
+          padding: 1vh 0vw;
+          font-size: 12px;
+          border-radius: 0rem;
+          border-bottom: 3px solid #000000;
+        }
+        .btn-primary:hover {
+          background-size: 200% 200%;
+          background-image: linear-gradient(to top, #000000 100%, transparent 100%);
+          color: white;
+          border-bottom: 3px solid #000000;
+          transition: all 0.09s ease-in;
+        }
+        .btn-small {
+          width: 50%;
+          display: inline-block;
+          letter-spacing: 2px;
+        }
+        .col-8 {
+          max-width: 66.666667%;
+        }
+        .mb-2 {
+          margin: 2rem 0rem;
+        }
+      }
+      .nombre-articulo {
+        margin-top: 2vh;
+        font-family: "Rubik", sans-serif;
+        font-size: 15px;
+        color: black;
+        text-align: center;
+      }
+      .price{
+        font-family: "Rubik", sans-serif;
+        font-size: 15px;
+        color: black;
+        font-weight: 800;
+      }
+    }
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-  .contenedorArticulos {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 20px;
-    justify-items: center;
-    align-items: center;
+  .contenedor {
+    background-color: white;
+    h1 {
+      font-family: "Manrope", sans-serif;
+      color: black;
+      font-size: 40px;
+      letter-spacing: 8px;
+      text-align: center;
+      justify-items: center;
+      padding: 8vh 0vh;
+      font-weight: 1000;
+    }
+    .contenedor-articulos {
+      margin-left: 2vw;
+      margin-right: 2vw;
+      margin-top: 5vh;
+      width: auto;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  
+    }
+  
+    .tarjeta {
+      text-align: center;
+      color: black;
+      overflow: hidden;
+      border: 1px solid lightgray;
+  
+      .img {
+        height: 90vh;
+        width: auto;
+        object-fit: cover;
+        object-position: center;
+      }
+  
+      .bag {
+        border: none;
+        background-color: white;
+        font-size: 20px;
+      }
+  
+      .divC1 {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        .talle {
+          font-family: "Rubik", sans-serif;
+          font-size: 12px;
+          color: black;
+          text-align: justify;
+          margin-left: 8vw;
+        }
+        .form-select {
+          font-family: "Rubik", sans-serif;
+          font-size: 15px;
+          color: black;
+          width: 50%;
+          margin: 0 auto;
+          border-radius: 0rem;
+          border: 1px solid #000000;
+        }
+  
+        .btn {
+          align-items: center;
+          color: #000000;
+          position: relative;
+          text-decoration: none;
+          font-weight: 400;
+          text-align: center;
+          border: 0;
+          cursor: pointer;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          text-transform: uppercase;
+          background: none;
+          white-space: normal;
+          -webkit-transition: all 0.4s ease;
+          -ms-transition: all 0.4s ease;
+          -moz-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+        }
+        .btn-primary {
+          display: block;
+          margin: 0 auto;
+          padding: 1vh 0vw;
+          font-size: 14px;
+          border-radius: 0rem;
+          border-bottom: 3px solid #000000;
+        }
+        .btn-primary:hover {
+          background-size: 200% 200%;
+          background-image: linear-gradient(to top, #000000 100%, transparent 100%);
+          color: white;
+          border-bottom: 3px solid #000000;
+          transition: all 0.09s ease-in;
+        }
+        .btn-small {
+          width: 40%;
+          display: inline-block;
+          letter-spacing: 2px;
+        }
+        .col-8 {
+          max-width: 66.666667%;
+        }
+        .mb-2 {
+          margin: 2rem 0rem;
+        }
+      }
+      .nombre-articulo {
+        margin-top: 2vh;
+        font-family: "Rubik", sans-serif;
+        font-size: 18px;
+        color: black;
+        text-align: center;
+      }
+      .price{
+        font-family: "Rubik", sans-serif;
+        font-size: 15px;
+        color: black;
+        font-weight: 800;
+      }
+    }
   }
+  
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .contenedorArticulos {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 25px;
-    row-gap: 35px;
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 50px;
-  }
+
 }

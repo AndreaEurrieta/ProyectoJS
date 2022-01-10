@@ -4,25 +4,33 @@
   color: white;
   font-family: "Rubik", sans-serif;
 }
-form{
-  .buscar{
+
+.navbar{
+  display: flex;
+  height:28vh;
+ 
+  form{
+  width: 15vw;
+   .buscar{
   margin-left: 1vw;
   border-radius: 0rem;
   border: 1px solid #000000;
   height: 5vh;
+  width: 15vw;
   background-color: transparent;
- }
-}
+  }
+  }
 
-.divLogo {
-  width: 100vw;
+  .divLogo {
+    width: 80vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  .logo {
-    width: 400px;
+    .logo {
+    width: 40vw;
     height: auto;
     margin-right: 7vw;
+  }
   }
 }
 
@@ -56,4 +64,75 @@ form{
       margin-right: 0vw;
     }
   } 
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .section-advertising {
+    background-color: black;
+    padding: 5px 0;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 15px;
+  }
+  
+  .navbar{
+    display: flex;
+    flex-direction:row;
+  form{
+    .buscar{
+    margin-left: 1vw;
+    border-radius: 0rem;
+    border: 1px solid #000000;
+    height: 5vh;
+    width: 20vw;
+    background-color: transparent;
+   }
+  }
+  
+  .divLogo {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo {
+      width: 50vw;
+      height: auto;
+      margin-right: 0vw;
+    }
+  }
+}
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .section-advertising {
+    background-color: black;
+    padding: 5px 0;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 15px;
+  }
+  
+ 
+  form{
+    .buscar{
+    margin-left: 1vw;
+    border-radius: 0rem;
+    border: 1px solid #000000;
+    height: 5vh;
+    width: 15vw;
+    background-color: transparent;
+   }
+  }
+  
+  .divLogo {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo {
+      width: 40vw;
+      height: auto;
+      margin-right: 0vw;
+    }
+  }
+
 }
