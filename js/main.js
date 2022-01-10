@@ -44,6 +44,7 @@ const mostrarArticulos = () => {
 }
 
 function agregarProducto(id) {
+    document.getElementById('alert').style.display = "none";
     const producto = articulos.find(articulo => articulo.id === id);
     carrito.push(producto);
     mostrarCarrito(carrito);
@@ -56,11 +57,13 @@ function mostrarCarrito(carrito) {
     let total = 0;
 
     carrito.forEach((producto) => {
-        total += producto.price * producto.cantidad;
+        total += producto.price;
 
         const div = document.createElement("div");
         const div2 = document.createElement("div");
-        div2.classList.add("div2")
+        div2.classList.add("div2");
+        const div3 = document.createElement("div");
+        div3.classList.add("div3");
 
         const imagen = document.createElement("img");
         imagen.src = producto.img;
@@ -77,26 +80,26 @@ function mostrarCarrito(carrito) {
         const cantidad = document.createElement("input");
         cantidad.type = "number";
         cantidad.min = "1";
-        cantidad.classList.add = ("cantidad-producto");
+        cantidad.classList.add("cantidad-producto");
 
         const button = document.createElement('button');
         button.type = "button";
         button.innerHTML = '<i class="far fa-trash-alt"></i>';
-        button.classList.add = ("btn-eliminar-producto");
+        button.classList.add("btn-eliminar-producto");
         button.addEventListener('click', ()=>{
             carrito = carrito.filter(item => item !=producto)
             actualizarCarrito(carrito);
             mostrarCarrito(carrito);
         });
 
-
         div.appendChild(imagen);
         div2.appendChild(nombreArticulo);
         div2.appendChild(precioArticulo);
         div2.appendChild(cantidad);
-        div2.appendChild(button);
+        div3.appendChild(button);
         contenedorCarrito.appendChild(div);
         contenedorCarrito.appendChild(div2);
+        contenedorCarrito.appendChild(div3);
 
     });
 
@@ -107,7 +110,7 @@ function mostrarCarrito(carrito) {
     contenedorCarrito.querySelector('.cantidad-producto')
     contenedorCarrito.addEventListener('change', quantityChanged);
 
-     const totalHTML = document.createElement("p");
+    const totalHTML = document.createElement("p");
     totalHTML.textContent = `Total: $ ${total.toFixed(2)}`;
     contenedorCarrito.appendChild(totalHTML);
 

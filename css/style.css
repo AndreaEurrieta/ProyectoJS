@@ -774,8 +774,8 @@ footer .col3 p {
 }
 
 .iconoWhatsapp {
-  color: #270a14;
-  font-size: 50px;
+  color: #48a83b;
+  font-size: 40px;
   position: fixed;
   right: 2vw;
   bottom: 12vh;
@@ -893,24 +893,25 @@ form .buscar {
 .ventana-modal {
   display: none;
   width: 30vw;
-  height: auto;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  height: 100%;
   background-color: white;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 .ventana-modal .alerta {
   clear: both;
   padding: 1.5vh 0vw;
   text-align: center;
-  margin: 0vh 2.5vw;
+  margin: 10vh 2.5vw;
 }
 
 .ventana-modal .close-up {
   font-size: 18px;
   margin-right: 0.5vw;
-  margin-top: 0vh;
+  margin-top: 3vh;
   border: none;
   background-color: transparent;
   float: right;
@@ -930,38 +931,43 @@ form .buscar {
   color: black;
   font-size: 20px;
   letter-spacing: 3px;
-  margin: 2vh 5vw;
+  margin: 3vh 5vw;
   font-weight: 1000;
 }
 
 .ventana-modal .contenedor-carrito {
+  max-height: 75%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 70%;
-      grid-template-columns: 30% 70%;
-  height: 100%;
+  -ms-grid-columns: 50% 30% 20%;
+      grid-template-columns: 50% 30% 20%;
   overflow-x: hidden;
   margin-left: 3vw;
 }
 
+.ventana-modal .contenedor-carrito div {
+  margin-top: 2vh;
+}
+
 .ventana-modal .contenedor-carrito div .img-carrito {
-  height: 15vh;
+  height: 20vh;
   width: auto;
 }
 
 .ventana-modal .contenedor-carrito .div2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin-top: 2vh;
 }
 
 .ventana-modal .contenedor-carrito .div2 .nombreArticulo-carrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-family: "Rubik", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: normal;
   color: #000000;
 }
@@ -976,21 +982,66 @@ form .buscar {
   color: #000000;
 }
 
-.ventana-modal .contenedor-carrito .div2 .btn-eliminar-producto {
-  width: auto;
-  height: 20vh;
+.ventana-modal .contenedor-carrito .div2 .cantidad-producto {
+  width: 4vw;
+  height: 4vh;
 }
 
-.ventana-modal .comprarButton {
-  display: block;
-  margin: 0 auto;
-  padding: 1vh 0vw;
+.ventana-modal .contenedor-carrito .div3 {
+  margin-top: 2vh;
+}
+
+.ventana-modal .contenedor-carrito .div3 .btn-eliminar-producto {
+  border: none;
+  background-color: transparent;
+  margin-right: 1.2vw;
+  text-decoration: none;
+  color: black;
+  width: auto;
+  height: 5vh;
+}
+
+.ventana-modal .modal-footer {
+  background-color: white;
+  height: 15%;
+  justify-items: center;
+}
+
+.ventana-modal .modal-footer .btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+  position: relative;
+  text-decoration: none;
+  font-weight: 400;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-transform: uppercase;
+  background: none;
+  white-space: normal;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.ventana-modal .modal-footer .comprarButton {
+  margin: auto auto;
+  padding: 0vh 0vw;
   font-size: 14px;
   border-radius: 0rem;
   border-bottom: 3px solid #000000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  height: 40%;
 }
 
-.ventana-modal .comprarButton:hover {
+.ventana-modal .modal-footer .comprarButton:hover {
   background-size: 200% 200%;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(100%, #000000), to(transparent));
   background-image: linear-gradient(to top, #000000 100%, transparent 100%);
