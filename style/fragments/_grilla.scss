@@ -428,13 +428,15 @@
       border: 1px solid lightgray;
   
       .img {
-        height: 90vh;
+        height: 75vh;
         width: auto;
         object-fit: cover;
         object-position: center;
       }
   
       .bag {
+        display: flex;
+        margin: 1vw auto;
         border: none;
         background-color: white;
         font-size: 20px;

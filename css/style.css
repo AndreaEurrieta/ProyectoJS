@@ -1016,7 +1016,7 @@ footer .col3 p {
     border: 1px solid lightgray;
   }
   .contenedor .tarjeta .img {
-    height: 90vh;
+    height: 75vh;
     width: auto;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1024,6 +1024,10 @@ footer .col3 p {
        object-position: center;
   }
   .contenedor .tarjeta .bag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1vw auto;
     border: none;
     background-color: white;
     font-size: 20px;
