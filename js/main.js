@@ -1,9 +1,9 @@
 const contenedorArticulos = document.querySelector('.contenedor-articulos');
 const contenedorCarrito = document.querySelector('.contenedor-carrito');
-const articulos = []
-let carrito = []
+const articulos = [];
+let carrito = [];
 $(() => {
-    $.getJSON('./articulos.json',function(data) {
+    $.getJSON('./articulos.json', function (data) {
         data.forEach(elemento => articulos.push(elemento));
         mostrarArticulos(articulos);
     })
@@ -27,22 +27,21 @@ const mostrarArticulos = () => {
             <h2 class="nombre-articulo">${articulo.name}</h2>
             <p class="price">$ ${articulo.price}<p>
         </div>
-    `) 
+    `)
         $(function () {
-            
+
             let mostrarTalle = true;
             $(`#btnbag${articulo.id}`).on('click', () => {
-            if (mostrarTalle)
-                $(`#div1${articulo.id}`).slideDown("slow")
-            else
-                $(`#div1${articulo.id}`).slideUp("slow")
-            mostrarTalle = !mostrarTalle;
+                if (mostrarTalle)
+                    $(`#div1${articulo.id}`).slideDown("slow")
+                else
+                    $(`#div1${articulo.id}`).slideUp("slow")
+                mostrarTalle = !mostrarTalle;
             });
         });
         $(`#btn-carrito${articulo.id}`).on('click', () => agregarProducto(articulo.id));
     }
 }
-
 
 function agregarProducto(id) {
     const producto = articulos.find(articulo => articulo.id === id);
@@ -54,7 +53,7 @@ function mostrarCarrito(carrito) {
     contenedorCarrito.replaceChildren();
     document.getElementById("cantidadDeItems").textContent = carrito.length;
 
-    let total =  0;
+    let total = 0;
 
     carrito.forEach((producto) => {
         total += producto.price * producto.cantidad;
@@ -84,7 +83,7 @@ function mostrarCarrito(carrito) {
         button.type = "button";
         button.innerHTML = "✕";
         button.classList.add = ("btn-eliminar-producto");
-    
+
         div.appendChild(imagen);
         div2.appendChild(nombreArticulo);
         div2.appendChild(precioArticulo);
@@ -106,7 +105,6 @@ function mostrarCarrito(carrito) {
 
     const comprarButton = document.querySelector('.comprarButton');
     comprarButton.addEventListener('click', comprarButtonClicked);
-   
 }
 function comprarButtonClicked() {
     contenedorCarrito.innerHTML = '';
@@ -116,14 +114,12 @@ function quantityChanged(event) {
     const input = event.target;
     input.value <= 0 ? (input.value = 1) : null;
     mostrarCarrito();
-  }
-
+}
 function removeShoppingCartItem(event) {
     const buttonClicked = event.target;
     buttonClicked.closest('.contenedor-carrito').remove();
     mostrarCarrito();
-  }
-
+}
 function cargarLocalStorage() {
     let _carrito = localStorage.getItem('carrito');
     if (_carrito) carrito = JSON.parse(_carrito);
