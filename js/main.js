@@ -113,10 +113,12 @@ function mostrarCarrito(carrito) {
     const totalHTML = document.createElement("p");
     totalHTML.textContent = `Total: $ ${total.toFixed(2)}`;
     contenedorCarrito.appendChild(totalHTML);
-
-    const comprarButton = document.querySelector('.comprarButton');
-    comprarButton.addEventListener('click', comprarButtonClicked);
+   
 }
+
+const comprarButton = document.querySelector('.comprarButton');
+comprarButton.addEventListener('click', comprarButtonClicked);
+
 function comprarButtonClicked() {
     contenedorCarrito.innerHTML = '';
     mostrarCarrito();
